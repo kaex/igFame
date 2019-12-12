@@ -1,0 +1,23 @@
+{
+	"account": {
+		"username": "janedoe",
+		"password": "janedoe"
+	},
+	"sleep_delay": 2200,
+	"like_depth_per_user": 3,
+	"proxy": "",
+	"like_depth_per_tag": 4,
+	"tags": [
+		"xosad",
+		"igFame",
+		"baransel"
+	],
+	"blacklisted_tags": [
+		"testing",
+		"free"
+	],
+	"blacklisted_usernames": [
+		"instagram",
+		"facebook"
+	]
+}
