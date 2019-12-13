@@ -331,7 +331,7 @@ class igFame extends Common
 			{
 				$user_data = json_decode(file_get_contents(ROOTDIR . '/user_data/' . $this->username . '.json'), true);
 
-				$timeDifference = (new \DateTime($user_data['last_used']))->diff((new \DateTime($user_data['bot_started'])));
+				$timeDifference = (new \DateTime(str_replace('/', '-', $user_data['last_used'])))->diff((new \DateTime(str_replace('/', '-', $user_data['bot_started']))));
 
 				if ($timeDifference->h >= 1)
 				{
@@ -348,7 +348,7 @@ class igFame extends Common
 			else if ($data['like_count'] <= 300)
 			{
 				$user_data      = json_decode(file_get_contents(ROOTDIR . '/user_data/' . $this->username . '.json'), true);
-				$timeDifference = (new \DateTime($user_data['last_used']))->diff((new \DateTime($user_data['bot_started'])));
+				$timeDifference = (new \DateTime(str_replace('/', '-', $user_data['last_used'])))->diff((new \DateTime(str_replace('/', '-', $user_data['bot_started']))));
 				if ($timeDifference->h >= 1)
 				{
 					$json = json_decode(file_get_contents(ROOTDIR . '/user_data/' . $this->username . '.json'), true);
