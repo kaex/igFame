@@ -435,7 +435,7 @@ class igFame extends Common
 	 *
 	 * @return bool
 	 */
-	public function isBlacklisted(string $shortcode, string $type, string $text = ''): bool
+	public function isBlacklisted(string $shortcode, string $type, ?string $text = ''): bool
 	{
 		if (empty($text))
 		{
