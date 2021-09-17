@@ -4,10 +4,10 @@ namespace xosad;
 
 class igFame extends Common
 {
-	public  $user_agent      = 'Instagram 10.33.0 (iPad2,1; iPhone OS 9_3_5; en_RO; en-RO; scale=2.00; gamut=normal; 640x960) AppleWebKit/420+';
+	public  $user_agent      = 'Instagram 10.26.0 (iPhone8,1; iOS 10_2; en_US; en-US; scale=2.00; gamut=normal; 750x1334) AppleWebKit/420+';
 	public  $apiUrl          = 'https://i.instagram.com/api/v1';
-	private $ig_sig_key      = 'f612a5bc5effcb371d0d8b89c9c65be8efc6b1c49e947f6c8d7be29d5587cb5f';
-	private $sig_key_version = '5';
+	private $ig_sig_key      = '46024e8f31e295869a0e861eaed42cb1dd8454b55232d85f6c6764365079374b';
+	private $sig_key_version = '4';
 	private $like_depth_per_user;
 	private $like_depth_per_tag;
 	private $sleep;
@@ -23,9 +23,9 @@ class igFame extends Common
 	private $headers         = [
 		'Host: i.instagram.com',
 		'Accept-Language: en-RO;q=1',
-		'X-IG-Connection-Type: WiFi',
-		'X-IG-Capabilities: 36oH',
-		'X-IG-Connection-Speed:	1432kbps',
+		'X-IG-Connection-Type: WIFI',
+		'X-IG-Capabilities: 3brTvwM=',
+		'X-IG-Connection-Speed: 1432kbps',
 		'Accept: */*',
 		'Content-Type: application/x-www-form-urlencoded; charset=UTF-8',
 		'Connection: keep-alive',
